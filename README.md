@@ -1,5 +1,9 @@
 # Project KeyKette_USB : Build a Keylogger with Teensy 4.1
 
+## Disclaimer : 
+
+This project use is only intended for professional or educationnal purposes.
+
 ### Goal :
 
 Using a **Teensy 4.1** board, intercept keyboard input data entered by a user with some awesome features.
@@ -32,6 +36,31 @@ git clone https://github.com/Eragwen/KeyKette_USB.git
 8. Open the **Serial Monitor** by clicking on the magnifying glass on the top right.
 
 9. Type on your keyboard and see the magic happen ! You can even type in a text editor to see some results.
+
+## Features
+
+### LED Indicator
+
+To indicate if the KeyKette™ works correctly, we use the LED on the teensy to indicate what is working.
+
+Upon inserting the KeyKette™, 3 sequences of LED flashing will occur, there is a delay of 1 second between every sequence.
+
+First sequence : 1 flash the SD card has a problem, 2 flash the program starts without errors.
+
+Second sequence : 1 flash the keystroke cannot be registered, 2 flash the keystrokes are being registered.
+
+Third sequence : 1 flash the Reverse Shell has a problem, 2 flash the Reverse Shell has been established.
+
+### Keylogging
+
+The main feature of the KeyKette™ is being a Keylogger, it will register the keystrokes from the keyboard and store them in a file called keystrokes.txt in the SD card.
+
+### Reverse shell
+
+The second main feature is the execution of a Reverse Shell on the victim PC. 
+
+It uses TCP and you need to modify the correct parameters in the code to get it to connect to the attacker device.
+
 ## Authors
 
 - [@Eragwen](https://github.com/Eragwen)
