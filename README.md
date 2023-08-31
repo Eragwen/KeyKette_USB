@@ -13,6 +13,7 @@ Using a **Teensy 4.1** board, intercept keyboard input data entered by a user wi
 | :--------: | :------: | :---------: |
 |<img src="https://letmeknow.fr/7659-large_default/pjrc-teensy-41.jpg" width=150> | <img src="https://cdn-icons-png.flaticon.com/512/2554/2554320.png" width=150> | <img src="https://cdn.iconscout.com/icon/free/png-256/free-arduino-1-226076.png" width=150> |
 
+We designed our payloads to work for Windows.
 
 ## How to use it
 
@@ -60,6 +61,10 @@ The main feature of the KeyKette™ is being a Keylogger, it will register the k
 The second main feature is the execution of a Reverse Shell on the victim PC. 
 
 It uses TCP and you need to modify the correct parameters in the code to get it to connect to the attacker device.
+
+### The Funny
+
+We enjoy funnyness so if the keyboard users types "QUOI" we input the word "FEUR" or if he types 69 he will earn a "nice" windows popup.
 
 ## Authors
 
